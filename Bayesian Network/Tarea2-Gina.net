@@ -1,0 +1,198 @@
+net
+{
+	propagationenginegenerator1791944048146838126L = "edu.ucla.belief.approx.BeliefPropagationSettings@7888dd27";
+	recoveryenginegenerator6944530267470113528l = "edu.ucla.util.SettingsImpl@6d727355";
+	node_size = (130.0 55.0);
+	huginenginegenerator3061656038650325130L = "edu.ucla.belief.inference.JoinTreeSettings@66867263";
+}
+
+node PaymentHistory
+{
+	states = ("Excellent" "Acceptable" "Unacceptable" );
+	position = (668 -144);
+	DSLxEXTRA_DEFINITIONxMANDATORY = "false";
+	diagnosistype = "AUXILIARY";
+	label = "Payment History";
+	DSLxPOSITIONxWIDTH = "93";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+	DSLxTYPE = "CPT";
+	DSLxPOSITIONxHEIGHT = "30";
+	DSLxEXTRA_DEFINITIONxRANKED = "false";
+	ismapvariable = "false";
+	ID = "PaymentHistory";
+}
+node CreditWorthiness
+{
+	states = ("Positive" "Negative" );
+	position = (534 -383);
+	DSLxEXTRA_DEFINITIONxMANDATORY = "false";
+	diagnosistype = "AUXILIARY";
+	label = "Credit Worthiness";
+	DSLxPOSITIONxWIDTH = "100";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+	DSLxTYPE = "CPT";
+	DSLxPOSITIONxHEIGHT = "30";
+	DSLxEXTRA_DEFINITIONxRANKED = "false";
+	ismapvariable = "false";
+	ID = "CreditWorthiness";
+}
+node Age
+{
+	states = ("Between16and21" "Between22and64" "Over65" );
+	position = (816 -24);
+	DSLxEXTRA_DEFINITIONxMANDATORY = "false";
+	diagnosistype = "AUXILIARY";
+	label = "Age";
+	DSLxPOSITIONxWIDTH = "70";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+	DSLxTYPE = "CPT";
+	DSLxPOSITIONxHEIGHT = "30";
+	DSLxEXTRA_DEFINITIONxRANKED = "false";
+	ismapvariable = "false";
+	ID = "Age";
+}
+node Reliability
+{
+	states = ("Reliable" "Unreliable" );
+	position = (825 -265);
+	DSLxEXTRA_DEFINITIONxMANDATORY = "false";
+	diagnosistype = "AUXILIARY";
+	label = "Reliability";
+	DSLxPOSITIONxWIDTH = "70";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+	DSLxTYPE = "CPT";
+	DSLxPOSITIONxHEIGHT = "30";
+	DSLxEXTRA_DEFINITIONxRANKED = "false";
+	ismapvariable = "false";
+	ID = "Reliability";
+}
+node Income
+{
+	states = ("High" "Medium" "Low" );
+	position = (262 -30);
+	DSLxEXTRA_DEFINITIONxMANDATORY = "false";
+	diagnosistype = "AUXILIARY";
+	label = "Income";
+	DSLxPOSITIONxWIDTH = "83";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+	DSLxTYPE = "CPT";
+	DSLxPOSITIONxHEIGHT = "30";
+	DSLxEXTRA_DEFINITIONxRANKED = "false";
+	ismapvariable = "false";
+	ID = "Profession";
+}
+node Assets
+{
+	states = ("High" "Medium" "Low" );
+	position = (398 -135);
+	DSLxEXTRA_DEFINITIONxMANDATORY = "false";
+	diagnosistype = "AUXILIARY";
+	label = "Assets";
+	DSLxPOSITIONxWIDTH = "70";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+	DSLxTYPE = "CPT";
+	DSLxPOSITIONxHEIGHT = "30";
+	DSLxEXTRA_DEFINITIONxRANKED = "false";
+	ismapvariable = "false";
+	ID = "Worth";
+}
+node DebtIncomeRatio
+{
+	states = ("Low" "High" );
+	position = (531 -33);
+	DSLxEXTRA_DEFINITIONxMANDATORY = "false";
+	diagnosistype = "AUXILIARY";
+	label = "Ratio of Debts To Income";
+	DSLxPOSITIONxWIDTH = "81";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+	DSLxTYPE = "CPT";
+	DSLxPOSITIONxHEIGHT = "30";
+	DSLxEXTRA_DEFINITIONxRANKED = "false";
+	ismapvariable = "false";
+	ID = "RatioDebInc";
+}
+node FutureIncome
+{
+	states = ("Promising" "Not_promising" );
+	position = (267 -273);
+	DSLxEXTRA_DEFINITIONxMANDATORY = "false";
+	diagnosistype = "AUXILIARY";
+	label = "Future Income";
+	DSLxPOSITIONxWIDTH = "90";
+	DSLxEXTRA_DEFINITIONxDIAGNOSIS_TYPE = "AUXILIARY";
+	excludepolicy = "include whole CPT";
+	DSLxTYPE = "CPT";
+	DSLxPOSITIONxHEIGHT = "30";
+	DSLxEXTRA_DEFINITIONxRANKED = "false";
+	ismapvariable = "false";
+	ID = "FutureIncome";
+}
+potential ( PaymentHistory | Age DebtIncomeRatio )
+{
+	data = (((	0.325	0.375	0.3	)
+		(	0.01	0.15	0.84	))
+		((	0.6	0.3076923076923077	0.09230769230769231	)
+		(	0.046153846153846156	0.3076923076923077	0.6461538461538462	))
+		((	0.9244444444444445	0.06666666666666668	0.00888888888888889	)
+		(	0.35555555555555557	0.3333333333333333	0.3111111111111111	)));
+}
+potential ( CreditWorthiness | Reliability FutureIncome DebtIncomeRatio )
+{
+	data = ((((	0.9908256880733946	0.009174311926605505	)
+		(	0.8709677419354839	0.12903225806451613	))
+		((	0.9230769230769231	0.07692307692307693	)
+		(	0.42857142857142855	0.5714285714285714	)))
+		(((	0.5714285714285714	0.42857142857142855	)
+		(	0.07692307692307693	0.9230769230769231	))
+		((	0.12903225806451613	0.8709677419354839	)
+		(	0.009174311926605505	0.9908256880733946	))));
+}
+potential ( Age | )
+{
+	data = (	0.33999999999999997	0.33	0.33	);
+}
+potential ( Reliability | PaymentHistory Age )
+{
+	data = (((	0.6136363636363636	0.38636363636363635	)
+		(	0.9	0.1	)
+		(	0.9807692307692307	0.019230769230769232	))
+		((	0.20930232558139536	0.7906976744186046	)
+		(	0.6	0.4	)
+		(	0.8947368421052632	0.10526315789473684	))
+		((	0.04225352112676056	0.9577464788732394	)
+		(	0.2	0.8	)
+		(	0.5862068965517241	0.41379310344827586	)));
+}
+potential ( Income | )
+{
+	data = (	0.3333333333333333	0.3333333333333333	0.3333333333333333	);
+}
+potential ( Assets | Income )
+{
+	data = ((	0.65	0.3	0.050000000000000044	)
+		(	0.3	0.4	0.30000000000000004	)
+		(	0.05	0.29999999999999993	0.65	));
+}
+potential ( DebtIncomeRatio | )
+{
+	data = (	0.5	0.5	);
+}
+potential ( FutureIncome | Income Assets )
+{
+	data = (((	0.875	0.125	)
+		(	0.75	0.25	)
+		(	0.5625	0.4375	))
+		((	0.7	0.3	)
+		(	0.5	0.5	)
+		(	0.3	0.7	))
+		((	0.4375	0.5625	)
+		(	0.25	0.75	)
+		(	0.125	0.875	)));
+}
