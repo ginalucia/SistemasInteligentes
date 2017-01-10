@@ -29,10 +29,10 @@ y = tf.placeholder('float')
 
 #Initialize layers with random values from a normal distribution of shape [a,b] -> a : size of input,  b : number of nodes in layer 
 
-hidden_1_layer = {	'weights': tf.Variable(tf.random_normal([len(train_x[0]),n_nodes_hidden_layer_1])),
+hidden_1_layer = {	'weights': tf.Variable(tf.random_normal([len(train_feat[0]),n_nodes_hidden_layer_1])),
 					'bias':tf.Variable(tf.random_normal([n_nodes_hidden_layer_1]))}
 
-hidden_2_layer = {	'weights': tf.Variable(tf.random_normal([n_nodes_hidden_layer_l,n_nodes_hidden_layer_2])),
+hidden_2_layer = {	'weights': tf.Variable(tf.random_normal([n_nodes_hidden_layer_1,n_nodes_hidden_layer_2])),
 					'bias':tf.Variable(tf.random_normal([n_nodes_hidden_layer_2]))}
 	
 hidden_3_layer = {	'weights': tf.Variable(tf.random_normal([n_nodes_hidden_layer_2,n_nodes_hidden_layer_3])),
@@ -99,6 +99,4 @@ def train_neural_network(x):
 
 
 train_neural_network(x)
-
-
 
