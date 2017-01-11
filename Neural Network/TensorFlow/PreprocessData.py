@@ -58,6 +58,6 @@ if __name__ == '__main__':
 	train_feat,train_label,test_feat,test_label= create_feature_set('car.data')
 	# if you want to pickle this data:
 	with open('car_set.pickle','wb') as f:
-			pickle.dump([train_x,train_y,test_x,test_y],f)
+			pickle.dump([train_feat,train_label,test_feat,test_label],f)
 
 			
